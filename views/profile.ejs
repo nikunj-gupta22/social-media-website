@@ -1,0 +1,21 @@
+
+<link rel="stylesheet" href="/Css/userprofile.css">
+
+<img src="<%=  avatar %>" width="100">
+<h3>UserName:<%= email  %></h3>
+
+<h4>UserEmail:<%= name  %> </h4>
+
+
+<% if(edit) { %>
+       <div class="container">
+      <form action="/user/update/<%= locals.user.id  %>" enctype="multipart/form-data" method="POST">
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">name</label>
+        <input class="form-control" id="exampleFormControlTextarea1" value="<%= locals.user.name  %>" name="name"></input>
+      <input type="file" placeholder="upload profile" name="avatar">
+      </div>
+<button class="btn btn-primary" type="submit">Update</button>
+    </form>
+       </div>
+<%  }   %>

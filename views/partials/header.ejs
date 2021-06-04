@@ -1,0 +1,60 @@
+<div class="header">
+
+
+<div class="header-codial">
+    <h2>Codeial</h2>
+</div>
+
+<div class="header-btn">
+<ul>
+
+<% if(locals.user) {  %>
+<li><a href="/user/profile/<%= locals.user.id   %>" id="myusername"><%=  locals.user.name    %></a></li>
+<li>  <a href="/user/signout">Signout</a></li>
+<% } else{ %>
+<li>  <a href="/user/signin">Signin</a></li>
+<li>  <a href="/user/signup">Signup</a></li>
+<% } %>
+</ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

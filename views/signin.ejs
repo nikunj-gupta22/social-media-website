@@ -1,0 +1,16 @@
+<div class="container">
+<form action="/user/createsession" method="POST">
+    
+   
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" placeholder="Enter Email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Password</label>
+        <input type="password" class="form-control" placeholder="password" name="password" required/>  
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+<button class="btn btn-primary"><a href="/user/auth/google" style="color:white">Signin Via Google</a></button>
+</div>
